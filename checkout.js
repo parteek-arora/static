@@ -1,4 +1,3 @@
-<script>
     //get the checkout details
     {{ inject "checkoutId" checkout.id }};
     {{ inject "countryCode" settings.country_code }}
@@ -146,5 +145,4 @@
             });
         }
     });
-    
-</script>
+
