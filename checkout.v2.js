@@ -1,6 +1,6 @@
     //get the checkout details
-    {{inject "checkoutId" checkout.id}};
-    {{inject "countryCode" settings.country_code}}
+    '{{inject "checkoutId" checkout.id}}';
+    '{{inject "countryCode" settings.country_code}}'
     var jsContext = JSON.parse({{jsContext}});
     
     var ckboxID = "sameAsBilling";
