@@ -1,7 +1,16 @@
     //get the checkout details
-    {{ inject "checkoutId" checkout.id }};
-    {{ inject "countryCode" settings.country_code }}
-    var jsContext = JSON.parse({{jsContext}});
+   
+	var node = document.createElement('script');
+	var toInject = `(
+		 {{ inject "checkoutId" checkout.id }};
+    		 {{ inject "countryCode" settings.country_code }}
+		 var jsContext = JSON.parse({{jsContext}});
+	)();`;
+
+	node.innerText = toInject ;
+	document.querySelector('head').appendChild(node);
+
+    
     
     var ckboxID = "sameAsBilling";
     var checkoutButtonID = "#checkout-shipping-continue";
