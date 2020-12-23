@@ -1,8 +1,4 @@
     //get the checkout details
-    '{{inject "checkoutId" checkout.id}}';
-    '{{inject "countryCode" settings.country_code}}'
-    var jsContext = JSON.parse({{jsContext}});
-    
     var ckboxID = "sameAsBilling";
     var checkoutButtonID = "#checkout-shipping-continue";
     var customerContinueBtn = "checkout-customer-continue";
